@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
-        /*
+        
         if (Input.GetKey(KeyCode.S) & Input.GetKey(KeyCode.D))
         {
             transform.Translate((Vector2.down + Vector2.right) * speed);
@@ -84,6 +84,6 @@ public class PlayerMovement : MonoBehaviour
                 transform.Translate((Vector2.down + Vector2.right) * speed);
             }
         }
-        */
+        
     }
 }
