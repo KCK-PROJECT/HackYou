@@ -1,0 +1,66 @@
+Initialize engine version: 5.2.2f1 (3757309da7e7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 560M (ID=0x1251)
+    Vendor:   NVIDIA
+    VRAM:     1484 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\ADM\Desktop\HackYou-master\HackYou_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\ADM\Desktop\HackYou-master\HackYou_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\ADM\Desktop\HackYou-master\HackYou_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\ADM\Desktop\HackYou-master\HackYou_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\ADM\Desktop\HackYou-master\HackYou_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\ADM\Desktop\HackYou-master\HackYou_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\ADM\Desktop\HackYou-master\HackYou_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\ADM\Desktop\HackYou-master\HackYou_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\ADM\Desktop\HackYou-master\HackYou_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\ADM\Desktop\HackYou-master\HackYou_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\ADM\Desktop\HackYou-master\HackYou_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\ADM\Desktop\HackYou-master\HackYou_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\ADM\Desktop\HackYou-master\HackYou_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\ADM\Desktop\HackYou-master\HackYou_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\ADM\Desktop\HackYou-master\HackYou_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.058 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\ADM\Desktop\HackYou-master\HackYou_Data\Managed\System.dll (this message is harmless)
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 1cbc -> priority: 1 
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.055524 ms
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 369.
+Total: 0.395564 ms (FindLiveObjects: 0.061152 ms CreateObjectMapping: 0.060296 ms MarkObjects: 0.257009 ms  DeleteObjects: 0.016250 ms)
+
+makarena
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Behaviour:get_isActiveAndEnabled ()
+  at UnityEngine.EventSystems.UIBehaviour.IsActive () [0x00000] in <filename unknown>:0 
+  at UnityEngine.UI.Graphic.SetVerticesDirty () [0x00000] in <filename unknown>:0 
+  at UnityEngine.UI.Text.set_text (System.String value) [0x00000] in <filename unknown>:0 
+  at console.SubmitInput (System.String arg0) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Events.InvokableCall`1[System.String].Invoke (System.Object[] args) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Events.InvokableCallList.Invoke (System.Object[] parameters) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Events.UnityEventBase.Invoke (System.Object[] parameters) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Events.UnityEvent`1[T0].Invoke (.T0 arg0) [0x00000] in <filename unknown>:0 
+  at UnityEngine.UI.InputField.SendOnSubmit () [0x00000] in <filename unknown>:0 
+  at UnityEngine.UI.InputField.DeactivateInputField () [0x00000] in <filename unknown>:0 
+  at UnityEngine.UI.InputField.OnDeselect (UnityEngine.EventSystems.BaseEventData eventData) [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.ExecuteEvents.Execute (IDeselectHandler handler, UnityEngine.EventSystems.BaseEventData eventData) [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.ExecuteEvents.Execute[IDeselectHandler] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) [0x00000] in <filename unknown>:0 
+UnityEngine.Debug:Internal_LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.EventSystem:SetSelectedGameObject(GameObject, BaseEventData)
+UnityEngine.EventSystems.PointerInputModule:ClearSelection()
+UnityEngine.EventSystems.StandaloneInputModule:DeactivateModule()
+UnityEngine.EventSystems.EventSystem:OnDisable()
+ 
+(Filename:  Line: -1)
+
