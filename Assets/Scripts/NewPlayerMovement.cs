@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+<<<<<<< HEAD
 using UnityEngine.UI;
 
 public class NewPlayerMovement : MonoBehaviour
@@ -13,10 +14,21 @@ public class NewPlayerMovement : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+=======
+
+public class NewPlayerMovement : MonoBehaviour {
+
+    Rigidbody2D rbody;
+    Animator anim;
+
+	// Use this for initialization
+	void Start () {
+>>>>>>> origin/master
 
         rbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
 
+<<<<<<< HEAD
     }
 
     // Update is called once per frame
@@ -151,12 +163,32 @@ public class NewPlayerMovement : MonoBehaviour
             }
 
             rbody.MovePosition(rbody.position + movement_vector_south_west * Time.deltaTime * speed);
+=======
+	}
+	
+	// Update is called once per frame
+	void Update () {
+
+        Vector2 movement_vector = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+
+        if (movement_vector != Vector2.zero)
+        {
+            anim.SetBool("iswalking", true);
+            anim.SetFloat("input_x", movement_vector.x);
+            anim.SetFloat("input_y", movement_vector.y);
+>>>>>>> origin/master
         }
         else
         {
             anim.SetBool("iswalking", false);
         }
 
+<<<<<<< HEAD
 
     }
+=======
+        rbody.MovePosition(rbody.position + movement_vector * Time.deltaTime);
+
+	}
+>>>>>>> origin/master
 }
